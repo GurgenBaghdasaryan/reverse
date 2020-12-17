@@ -1,12 +1,9 @@
-let reverse = (str) => {
-    let newString = "";
-
-    for (let i = str.length - 1; i >= 0; i--) {
-        newString += str[i];
-    };
-    return newString;
+function reverse (x,y){
+    let arr = new Array();
+    for(let i = 0;i < y;i++){
+        arr[i] = x++;
+    }
+    return arr;
 }
 
-const reversed = reverse("Baghdasaryan");
-
-console.log(reversed);
+console.log(reverse(1,4));
