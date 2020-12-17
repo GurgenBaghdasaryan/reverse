@@ -1,9 +1,10 @@
-function myFunc(x, y) {
-    let arr = []
-    for (let i = 0; i < y; i++) {
-        arr[i] = x++;
-    }
+function range(x, y) {
+    // let foltered = x;
+    let arr = [];
+    for (let i = x; i <= y; i++) {
+        arr[i - x] = i;
+    };
     return arr;
-}
+};
 
-console.log(myFunc(2, 5));
+console.log(range(10, 10000));
