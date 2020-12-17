@@ -1,9 +1,9 @@
-function reverse (x,y){
-    let arr = new Array();
-    for(let i = 0;i < y;i++){
+function myFunc(x, y) {
+    let arr = []
+    for (let i = 0; i < y; i++) {
         arr[i] = x++;
     }
     return arr;
 }
 
-console.log(reverse(1,4));
+console.log(myFunc(2, 5));
