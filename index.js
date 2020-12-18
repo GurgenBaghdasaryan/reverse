@@ -6,13 +6,11 @@ let calculator = {
     },
 
     sum() {
-        this.resultSum = this.Number1 + this.Number2;
-        return this.resultSum;
+        return resultSum = this.Number1 + this.Number2;
     },
 
     mul() {
-        this.resultMul = this.Number1 * this.Number2;
-        return this.resultMul;
+        return  resultMul = this.Number1 * this.Number2;
     }
 }
 
