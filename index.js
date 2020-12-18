@@ -1,11 +1,21 @@
-function range(x, y) {
-    let arr = [];
+let calculator = {
+    read(number1, number2) {
+        this.Number1 = number1;
+        this.Number2 = number2;
+        console.log(this);
+    },
 
-    for (let i = x; i <= y; i++) {
-        arr[i - x] = i;
-    };
+    sum() {
+        this.result = this.Number1 + this.Number2;
+        return this.result;
+    },
 
-    return arr;
-};
+    mul() {
+        this.resultMul = this.Number1 * this.Number2;
+        return this.resultMul;
+    }
+}
 
-console.log(range(10, 1000));
+calculator.read(4, 5);
+console.log(calculator.sum());
+console.log(calculator.mul());
