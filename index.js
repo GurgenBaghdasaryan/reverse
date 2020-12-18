@@ -1,12 +1,11 @@
-let reverse = (str) => {
-    let newString = "";
+function range(x, y) {
+    let arr = [];
 
-    for (let i = str.length - 1; i >= 0; i--) {
-        newString += str[i];
+    for (let i = x; i <= y; i++) {
+        arr[i - x] = i;
     };
-    return newString;
-}
 
-const reversed = reverse("Baghdasaryan");
+    return arr;
+};
 
-console.log(reversed);
+console.log(range(10, 1000));
