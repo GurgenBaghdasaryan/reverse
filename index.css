@@ -1,10 +1,12 @@
-* {
-    box-sizing: border-box;
+  body{
+    margin: 0px;
+    padding: 0px;
   }
-  
+
   .header {
-    background-color: #f44336;
+    background-color: #197e0f;
     padding: 30px 40px;
+    margin: 0px;
     color: white;
     text-align: center;
   }
@@ -19,16 +21,16 @@
     margin: 0;
     border: none;
     border-radius: 0;
-    width: 75%;
     padding: 10px;
     float: left;
     font-size: 16px;
+    margin-left: 34%;
   }
   
   .add {
     padding: 10px;
-    width: 25%;
-    background: #d9d9d9;
+    width: 17%;
+    background:#5cc977;
     color: #555;
     float: left;
     text-align: center;
@@ -36,8 +38,34 @@
     cursor: pointer;
     transition: 0.3s;
     border-radius: 0;
+    border: none;
   }
   
   .add:hover {
-    background-color: #bbb;
+    background-color: rgb(99, 226, 126);
+  }
+
+  .todo-list{
+      width: 40%;
+      margin-left: 25%;
+      background: #197e0f;
+      padding: 30px 40px 40px;
+      margin-top: 38px;
+  }
+
+
+    .todo li {
+      list-style-type: none; 
+        display: flex;
+        width: 0%;
+   }
+
+   .delete{
+    margin-left: 87%;
+    background:#5cc977;
+    border: none;
+   }
+
+   .delete:hover {
+    background-color: rgb(99, 226, 126);
   }
