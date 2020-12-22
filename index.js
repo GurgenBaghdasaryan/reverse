@@ -1,18 +1,30 @@
-let calculator = {
-    read(number1, number2) {
-        this.number1 = number1;
-        this.number2 = number2;
-    },
+let addMessage = document.querySelector('.myInput'),
+ addButton = document.querySelector('.add'),
+ todo = document.querySelector('.todo');
+let todoList = [];
 
-    sum() {
-        return this.number1 + this.number2;
-    },
+addButton.addEventListener('click', function (){
+    let newTodo = {
+        todo: addMessage.value,
+        checked:false,
+        important:false
+    };
 
-    mul() {
-        return this.number1 * this.number2;
-    }
-}
+    todoList.push(newTodo);
+    console.log(todoList);
+    displayMessages();
+});
 
-calculator.read(12, 25);
-console.log(calculator.sum());
-console.log(calculator.mul());
+ function displayMessages(){
+    let displayMessage = '';
+     todoList.forEach(function(item,i) {
+         displayMessage += `
+        <li>
+            <input type='checkbox' id='item_${i}'>
+            <label for='item_${i}'>${item.todo}</label>
+        </li>
+        `;
+        todo.innerHTML = displayMessage;
+    });
+ }
+ 
